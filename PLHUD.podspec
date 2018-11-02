@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "PLHUD"
   s.version      = "1.0.0"
-  s.summary      = "A short description of PLHUD."
+  s.summary      = "Just for loading transition"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                      Just for loading transition
+                      Just for loading transition, You can use it when load data from Network
                    DESC
 
   s.homepage     = "https://plumhly@github.com/plumhly/PLHUD.git"
@@ -92,6 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "*.swift"
+  s.swift_version = '4.2'
 
   # s.public_header_files = "Classes/**/*.h"
 
