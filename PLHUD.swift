@@ -8,15 +8,15 @@
 
 import UIKit
 
-class PLHUD: UIView {
-
+public class PLHUD: UIView {
+    
     /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func draw(_ rect: CGRect) {
+     // Drawing code
+     }
+     */
     
     init() {
         super.init(frame: .zero)
@@ -42,11 +42,11 @@ class PLHUD: UIView {
         activety.startAnimating()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    static func show(in view: UIView) {
+    public class func show(in view: UIView) {
         let hud = PLHUD()
         view.addSubview(hud)
         hud.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -55,7 +55,7 @@ class PLHUD: UIView {
         hud.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
     }
     
-    static func hide(in view: UIView) {
+    public class func hide(in view: UIView) {
         view.subviews.forEach { view in
             if view is PLHUD {
                 view.removeFromSuperview()
@@ -63,7 +63,7 @@ class PLHUD: UIView {
             }
         }
     }
-
+    
 }
 
 
